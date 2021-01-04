@@ -11,7 +11,7 @@ BakeryOrderApp is an application that will allow users to view menu and place or
 </p>
 
 ## Objective
-1- Provide fast and reliable apps
-2- Reduce paper waste by using online menu
-3- Increase customer satisfaction
-4- Increase brand awareness
+1. Provide fast and reliable apps
+2. Reduce paper waste by using online menu
+3. Increase customer satisfaction
+4. Increase brand awareness
