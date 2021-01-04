@@ -9,5 +9,6 @@
 <p>
 BakeryOrderApp is an application that will allow users to view menu and place order for the bakery. Users can just order through the application and pay at the store. Users can place order even before they aare at the store and just pay when they are arrived at the store. Users also can browse menu using the application 
 </p>
-### Objective
+
+## Objective
 1- Provide fast and reliable apps
