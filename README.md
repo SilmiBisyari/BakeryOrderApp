@@ -15,3 +15,5 @@ BakeryOrderApp is an application that will allow users to view menu and place or
 2. Reduce paper waste by using online menu
 3. Increase customer satisfaction
 4. Increase brand awareness
+
+![BakeryOrder Sequence Diagram](BakeryOrderApp.jpg)
