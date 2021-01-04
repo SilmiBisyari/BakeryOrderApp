@@ -1,4 +1,4 @@
-# BakeryOrderApp
+# BakeryOrderApp (Proposal)
 
 ### NAME & MATRIC NO
 - Muhammad Silmi Bisyari Bin Mohd Khairani  1813633
