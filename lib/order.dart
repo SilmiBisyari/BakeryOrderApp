@@ -1,9 +1,9 @@
+import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:fradio/fradio.dart';
 import 'package:stepo/stepo.dart';
-import 'dart:math';
 
-void main() => runApp(order());
+import 'main.dart';
 
 class order extends StatelessWidget {
   @override
@@ -14,13 +14,13 @@ class order extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      home: MyHomePage(title: 'ORDER CART'),
+        home: MyHomePage(title: 'CAKE ORDER', ),
     );
   }
 }
 enum cake {ChocoCake,IceCake,CookiesCake}
 class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
+  MyHomePage({Key key, this.title,}) : super(key: key);
   final String title;
 
   @override
@@ -28,11 +28,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  //TextEditingController weightController = TextEditingController();
-  //TextEditingController heightController = TextEditingController();
 
-
-  cake _character = cake.ChocoCake;
+  cake _character ;
   double _Order = 0.0;
   double cakeprice ;
   int candles = 0;
@@ -53,10 +50,11 @@ class _MyHomePageState extends State<MyHomePage> {
           content: new Text(status),
           actions: <Widget>[
             new FlatButton(
-              child: new Text("Close"),
+              child: new Text("Close",),
               onPressed: () {
                 Navigator.of(context).pop();
-                _Order=0.0;
+                candles = 0;
+                sprinkles = 0;
               },
             ),
           ],
@@ -82,14 +80,14 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Row(
               children:<Widget> [
-                Text("      "),
+                Text("     "),
                 Image.asset("assets/images/ChocoCake.jpeg",
                   height: 100,
                   width: 100,
                   ),
                 Image.asset("assets/images/CookiesCake.jpg",
                   height: 100,
-                  width: 200,),
+                  width: 150,),
                 Image.asset("assets/images/IceCake.jfif",
                  height:150,
                   width:70,
@@ -98,9 +96,9 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Row(
               children:<Widget>[
-              new Text("             Choco Cake              "),
-              new Text("      Cookies Cake           "),
-                new Text("      Ice Cake"),
+              new Text("      Choco Cake              "),
+              new Text("   Cookies Cake       "),
+                new Text("  Ice Cake"),
             ]
             ),
             Container(
@@ -153,22 +151,22 @@ class _MyHomePageState extends State<MyHomePage> {
                ),
             ),
             Container(
-              margin: EdgeInsets.all(30),
-              child: new Text("OPTIONAL",textAlign: TextAlign.center)
+              margin: EdgeInsets.all(10),
+              child: new Text("OPTIONAL",textAlign: TextAlign.center, style: GoogleFonts.lemon())
             ),
             Row(
               children:<Widget>[
-                  new Text("                     Candles:                                          "),
-            Stepo(
+                  new Text("              Candles: (RM0.50)                 ",style: GoogleFonts.lemon()),
+                Stepo(
               key: UniqueKey(),
-              width: 50,                                         //Optional
+              width: 70,                                         //Optional
               backgroundColor: Colors.deepOrange,                 //Optional
               style: Style.horizontal,                              //Optional
               textColor: Colors.white,                            //Optional
-              animationDuration: Duration(milliseconds: 500),     //Optional
+              animationDuration: Duration(milliseconds: 1),     //Optional
               iconColor: Colors.white,                            //Optional
               fontSize: 20,                                       //Optional
-              iconSize: 10,                                       //Optional
+              iconSize: 200,                                       //Optional
               initialCounter: 0,                                 //Optional
               lowerBound: 0,                                     //Optional
               upperBound: 100,                                     //Optional
@@ -189,17 +187,17 @@ class _MyHomePageState extends State<MyHomePage> {
 
             Row(
               children:<Widget>[
-                new Text("                     Sprinklers :                                      "),
+                new Text("              Sprinklers :(RM1.00)            ",style: GoogleFonts.lemon()),
             Stepo(
               key: UniqueKey(),
-              width: 50,                                         //Optional
+              width: 70,                                         //Optional
               backgroundColor: Colors.deepOrange,                 //Optional
               style: Style.horizontal,                              //Optional
               textColor: Colors.white,                            //Optional
-              animationDuration: Duration(milliseconds: 500),     //Optional
+              animationDuration: Duration(milliseconds: 1),     //Optional
               iconColor: Colors.white,                            //Optional
               fontSize: 10,                                       //Optional
-              iconSize: 20,                                       //Optional
+              iconSize: 50,                                       //Optional
               initialCounter: 0,                                 //Optional
               lowerBound: 0,                                     //Optional
               upperBound: 100,                                     //Optional
@@ -213,19 +211,31 @@ class _MyHomePageState extends State<MyHomePage> {
               },
             ),]),
 
-           /* Container(
-              margin: EdgeInsets.all(10),
-              child: Text(_Order.toStringAsFixed(2))),*/
             Container(
-                margin: EdgeInsets.all(20),
-                width: double.infinity,
-                height: 55,
-                child: ElevatedButton(
-                  child: Text('Checkout'),
-                  onPressed: _setOrder,
-                )),
+              margin: EdgeInsets.all(10),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children:<Widget>[
+              RaisedButton(
+              padding: const EdgeInsets.all(10),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context)  => MyApp()));},
+                child: const Text(
+                'Back',
+                style: TextStyle(fontSize: 20),
+              ),
+            ),
+                new Text("          "),
+                RaisedButton(
+                    padding: const EdgeInsets.all(10),
+                    onPressed: _setOrder,
+                    child: const Text('Check Out', style: TextStyle(fontSize: 20),)
+                  ,)]
 
-          ],
+            )],
         ),
       ),
     );
