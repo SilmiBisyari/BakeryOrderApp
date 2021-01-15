@@ -24,8 +24,7 @@ BakeryOrderApp is an application that will allow users to view menu and place or
 - It provided total cost for the cake order.
 
 ### Screen Navigation
-1. Login - user authentication+error checking+user database+firebase authentication
-Using the Firebase plugin to create an email based Login and Sign Up fuction. When user open the app, they will be presented with a screen with two text fields; email and password. If the user has an account, they can just key in the email and password and click login. If the user is a new user, they can enter the email and password and click sign up.
+1. Login - Using the Firebase plugin to create an email based Login and Sign Up fuction. When user open the app, they will be presented with a screen with two text fields; email and password. If the user has an account, they can just key in the email and password and click login. If the user is a new user, they can enter the email and password and click sign up.
 
 2. Menu - Display cake menu and provides button to be navigate to the checkout page.
 
