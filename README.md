@@ -24,12 +24,16 @@ First of all, this apps will allow users to login into BakeryOrder aaplication. 
 
 ### Screen Navigation
 1. Login - Using the Firebase plugin to create an email based Login and Sign Up fuction. When user open the app, they will be presented with a screen with two text fields; email and password. If the user has an account, they can just key in the email and password and click login. If the user is a new user, they can enter the email and password and click sign up.
-[![LoginPage.jpg](https://i.postimg.cc/sQqQyJmX/1.png)](https://postimg.cc/sQqQyJmX)
 
+[![LoginPage.jpg](https://i.postimg.cc/sQqQyJmX/1.png)](https://postimg.cc/sQqQyJmX)
 
 2. Menu - Display cake menu and provides button to be navigate to the checkout page.
 
-3. Order/Checkout - Customer able to see cake menu again on the top of body page and also provides radio button for customer to choose which cake to be bought.            Customer can also choose add-on ingredient such as sprinklers and candles to be included with the orders. When customer click checkout button, The popup dialog will be display on the screen and it indicates the total cost of cake order. Customer can go back to the main screen by clicking the back button. 
+[![Menu.jpg](https://i.postimg.cc/18gCLDfx/2.png)](https://postimg.cc/18gCLDfx)
+
+3. Order/Checkout - Customer able to see cake menu again on the top of body page and also provides radio button for customer to choose which cake to be bought.            Customer can also choose add-on ingredient such as sprinklers and candles to be included with the orders. When customer click checkout button, The popup dialog will be display on the screen and it indicates the total cost of cake order. Customer can go back to the main screen by clicking the back button.
+
+[![Checkout.jpg](https://i.postimg.cc/F7CCWTFg/3.png)](https://postimg.cc/F7CCWTFg)
 
 ### Work Delegation
 - Manage the order page and provide a calculation when customer purchased at our store, view prices of they had checkout. (Silmi)
