@@ -33,3 +33,6 @@ BakeryOrderApp is an application that will allow users to view menu and place or
 
 ### Sequence Diagram
 [![Bakery Order Sequence Diagram](https://i.postimg.cc/vmhWf6rB/Bakery-Order-App.jpg)](https://postimg.cc/sBBQRx0d)
+
+### Navigation Diagram
+[![Navigation-Flow.jpg](https://i.postimg.cc/ZntLNh9N/Navigation-Flow.jpg)](https://postimg.cc/1nB6x2rR)
