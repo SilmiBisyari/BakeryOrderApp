@@ -18,10 +18,9 @@ BakeryOrderApp is an application that will allow users to view menu and place or
 5. Increase brand awareness
 
 ### Features
-- It provides login for customer to enter bakeryOrder app. 
-- Display various cake on display screen as customer can see 3 types of cakes on the menu itself.
-- Provided selection cake on the order page where customer can choose cake and add any addon such as candles to be included in the order cart. 
-- It provided total cost for the cake order.
+<p>
+First of all, this apps will allow users to login into BakeryOrder aaplication. After user already login, the apps will display various cake on display screen. Users can choose what type of cake that they want to order. When the users click on the cake that they want, it'll bring them to the checkout page. On checkout page, users will be given option to add candles and sprinkles for their cake. Lastly users can click on pay now to display the total price for the cake
+</p>
 
 ### Screen Navigation
 1. Login - Using the Firebase plugin to create an email based Login and Sign Up fuction. When user open the app, they will be presented with a screen with two text fields; email and password. If the user has an account, they can just key in the email and password and click login. If the user is a new user, they can enter the email and password and click sign up.
