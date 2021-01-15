@@ -30,9 +30,9 @@ First of all, this apps will allow users to login into BakeryOrder aaplication. 
 3. Order/Checkout - Customer able to see cake menu again on the top of body page and also provides radio button for customer to choose which cake to be bought.            Customer can also choose add-on ingredient such as sprinklers and candles to be included with the orders. When customer click checkout button, The popup dialog will be display on the screen and it indicates the total cost of cake order. Customer can go back to the main screen by clicking the back button. 
 
 ### Work Delegation
-Silmi - Manage order page and provide a calculation when customer buy cake at our store , they can view prices of they had checkout.
-Faris - Handling menu page where it display current available cake menu that we provide to the customer
-Munirah - Create firestore and manage login page where customer need to register and sign in first before can access to the main page.
+Manage order page and provide a calculation when customer buy cake at our store , they can view prices of they had checkout. (silmi)
+Handling menu page where it display current available cake menu that we provide to the customer.(Faris)
+Create firestore and manage login page where customer need to register and sign in first before can access to the main page. (Munirah)
 
 ### Sequence Diagram
 [![Bakery Order Sequence Diagram](https://i.postimg.cc/vmhWf6rB/Bakery-Order-App.jpg)](https://postimg.cc/sBBQRx0d)
