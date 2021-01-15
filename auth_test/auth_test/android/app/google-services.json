@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "705990005413",
+    "project_id": "bakery-order-app",
+    "storage_bucket": "bakery-order-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705990005413:android:291f2c0253a165b840734c",
+        "android_client_info": {
+          "package_name": "com.example.auth_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705990005413-fpr0dtti7kt5sach3ek4ji6km1qj6110.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdINMlGANhA4JRWG7u7zz6q08Gw9I0J94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705990005413-fpr0dtti7kt5sach3ek4ji6km1qj6110.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705990005413:android:2611a90ef55d652f40734c",
+        "android_client_info": {
+          "package_name": "com.mobapp.bakery_order_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705990005413-fpr0dtti7kt5sach3ek4ji6km1qj6110.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdINMlGANhA4JRWG7u7zz6q08Gw9I0J94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705990005413-fpr0dtti7kt5sach3ek4ji6km1qj6110.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
