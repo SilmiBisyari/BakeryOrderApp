@@ -40,6 +40,9 @@ First of all, this apps will allow users to login into BakeryOrder aaplication. 
 ### Navigation Diagram
 [![Navigation-Flow.jpg](https://i.postimg.cc/ZntLNh9N/Navigation-Flow.jpg)](https://postimg.cc/1nB6x2rR)
 
+### Screen Navigation
+
+
 ### Reference
 - Coffee shop apps https://github.com/rajayogan/flutterui-coffeeshop https://www.youtube.com/watch?v=pn5gfGIfBpI&feature=emb_logo
 - Ninja Net: FLutter Tutorial https://www.youtube.com/watch?v=1ukSR1GRtMU&list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ
