@@ -37,7 +37,7 @@ First of all, this apps will allow users to login into BakeryOrder aaplication. 
 
 ### Work Delegation
 - Manage the order page and provide a calculation when customer purchased at our store, view prices of they had checkout. (Silmi)
-- Handling menu page where it display current available items.(Faris)
+- Handling menu page where it display current available items using Firestore.(Faris)
 - Create firebase and manage login page where customer need to register and sign in first before can access to the main page. (Munirah)
 
 ### Sequence Diagram
