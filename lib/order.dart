@@ -30,6 +30,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
 
   cake _character ;
+  String namecake =' ';
   double _Order = 0.0;
   double cakeprice ;
   int candles = 0;
@@ -39,9 +40,10 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _Order = cakeprice + (candles*0.50) + (sprinkles*1.0);
     });
-    _showDialog('Total Cost : RM $_Order');
+    _showDialog('Total Cost : RM $_Order .                       Cake : $namecake .                                   Candle : $candles . Sprinkles : $sprinkles',);
   }
-  void _showDialog(String status) {
+
+  void _showDialog(String status,) {
     showDialog(
       context: context,
       builder: (BuildContext context) {
@@ -116,6 +118,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       setState(() {
                         _character = value;
                          cakeprice = 25;
+                        namecake = 'Choco Cake';
                            });
                        },
                    ),),
@@ -130,6 +133,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         onChanged: (cake value) {
                          setState(() {
                     _character = value;
+                    namecake = 'Cookies Cake';
                     cakeprice = 45;
                   });
                 },
@@ -146,6 +150,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           setState(() {
                           _character = value;
                           cakeprice = 70;
+                          namecake = 'Ice Cake';
                    });
                  },
                ),
