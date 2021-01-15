@@ -24,6 +24,8 @@ First of all, this apps will allow users to login into BakeryOrder aaplication. 
 
 ### Screen Navigation
 1. Login - Using the Firebase plugin to create an email based Login and Sign Up fuction. When user open the app, they will be presented with a screen with two text fields; email and password. If the user has an account, they can just key in the email and password and click login. If the user is a new user, they can enter the email and password and click sign up.
+[![LoginPage.jpg](https://i.postimg.cc/sQqQyJmX/1.png)](https://postimg.cc/sQqQyJmX)
+
 
 2. Menu - Display cake menu and provides button to be navigate to the checkout page.
 
@@ -39,9 +41,6 @@ First of all, this apps will allow users to login into BakeryOrder aaplication. 
 
 ### Navigation Diagram
 [![Navigation-Flow.jpg](https://i.postimg.cc/ZntLNh9N/Navigation-Flow.jpg)](https://postimg.cc/1nB6x2rR)
-
-### Screen Navigation
-
 
 ### Reference
 - Coffee shop apps https://github.com/rajayogan/flutterui-coffeeshop https://www.youtube.com/watch?v=pn5gfGIfBpI&feature=emb_logo
