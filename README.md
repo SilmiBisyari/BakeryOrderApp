@@ -30,9 +30,11 @@ First of all, this apps will allow users to login into BakeryOrder aaplication. 
 2. Menu - Display cake menu and provides button to be navigate to the checkout page.
 
 [![Menu.jpg](https://i.postimg.cc/Nf9ymKHv/Menu.jpg)](https://postimg.cc/N5tfwfDd)
+
 3. Order/Checkout - Customer able to see cake menu again on the top of body page and also provides radio button for customer to choose which cake to be bought.            Customer can also choose add-on ingredient such as sprinklers and candles to be included with the orders. When customer click checkout button, The popup dialog will be display on the screen and it indicates the total cost of cake order. Customer can go back to the main screen by clicking the back button.
 
 [![order.jpg](https://i.postimg.cc/HkbVvFzS/order.jpg)](https://postimg.cc/ZWKbC713) [![reciept.jpg](https://i.postimg.cc/GhW4QbF8/reciept.jpg)](https://postimg.cc/2VxjjRXr)
+
 ### Work Delegation
 - Manage the order page and provide a calculation when customer purchased at our store, view prices of they had checkout. (Silmi)
 - Handling menu page where it display current available items using Firestore.(Faris)
