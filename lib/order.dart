@@ -2,8 +2,14 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:fradio/fradio.dart';
 import 'package:stepo/stepo.dart';
-
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:bakeryorderapp/login.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'main.dart';
+
+FirebaseFirestore firestore = FirebaseFirestore.instance;
+CollectionReference CakeOrder = FirebaseFirestore.instance.collection('Cake Order');
+
 
 class order extends StatelessWidget {
   @override
@@ -26,8 +32,16 @@ class MyHomePage extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
-
 class _MyHomePageState extends State<MyHomePage> {
+
+  Future<void> addcakeorder() {
+    return CakeOrder
+        .add({'Cakename': namecake, 'candles': candles, 'sprinkles': sprinkles, 'TotalPrice' : _Order})
+        .then((value) => print("Cake Added"))
+        .catchError((error) => print("Failed to add Cake Order: $error"));
+  }
+
+  final auth = FirebaseAuth.instance;
 
   cake _character ;
   String namecake =' ';
@@ -39,9 +53,11 @@ class _MyHomePageState extends State<MyHomePage> {
   void _setOrder() {
     setState(() {
       _Order = cakeprice + (candles*0.50) + (sprinkles*1.0);
+      addcakeorder();
     });
     _showDialog('Total Cost : RM $_Order .                       Cake : $namecake .                                   Candle : $candles . Sprinkles : $sprinkles',);
   }
+
 
   void _showDialog(String status,) {
     showDialog(
@@ -222,15 +238,15 @@ class _MyHomePageState extends State<MyHomePage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children:<Widget>[
-              RaisedButton(
-              padding: const EdgeInsets.all(10),
-              onPressed: () {
-                Navigator.push(
+                RaisedButton(
+                  padding: const EdgeInsets.all(10),
+                  onPressed: () {
+                    Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context)  => MyApp()));},
-                child: const Text(
-                'Back',
-                style: TextStyle(fontSize: 20),
+                      child: const Text(
+                      'Back',
+                        style: TextStyle(fontSize: 20),
               ),
             ),
                 new Text("          "),
