@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:fradio/fradio.dart';
 import 'package:stepo/stepo.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:bakeryorderapp/login.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'main.dart';
+import 'home.dart';
+
 
 FirebaseFirestore firestore = FirebaseFirestore.instance;
 CollectionReference CakeOrder = FirebaseFirestore.instance.collection('Cake Order');
@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: new Text("TOTAL", textAlign: TextAlign.center),
+          title: new Text("RECEIPT", textAlign: TextAlign.center),
           content: new Text(status),
           actions: <Widget>[
             new FlatButton(
@@ -116,7 +116,7 @@ class _MyHomePageState extends State<MyHomePage> {
               children:<Widget>[
               new Text("      Choco Cake              "),
               new Text("   Cookies Cake       "),
-                new Text("  Ice Cake"),
+                new Text("  Ice Cream Cake"),
             ]
             ),
             Container(
@@ -166,7 +166,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           setState(() {
                           _character = value;
                           cakeprice = 70;
-                          namecake = 'Ice Cake';
+                          namecake = 'Ice Cream Cake';
                    });
                  },
                ),
@@ -237,7 +237,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
-              children:<Widget>[
+              children: <Widget>[
                 RaisedButton(
                   padding: const EdgeInsets.all(10),
                   onPressed: () {
@@ -256,10 +256,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: const Text('Check Out', style: TextStyle(fontSize: 20),)
                   ,)]
 
-            )],
+            ),])
         ),
-      ),
-    );
+      );
   }
 }
 
